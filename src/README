@@ -1,0 +1,23 @@
+hadar19
+209800804
+
+1. Strategies of the Automatic Players
+GeniusPlayer:
+The strategy of this player is to fill the board in a sequential manner, starting from the last position where
+it placed its mark. It attempts to place its mark in rows and columns, moving from left to right and top to
+ bottom. If it reaches the end of a row, it moves to the next row.
+CleverPlayer:
+This player uses a random strategy but with an element of smartness. It tries to place its mark in a random
+positionon the board, and if that position is already occupied, it chooses another random position until
+it finds an empty spot. There is also a mechanism to prevent it from getting stuck in the same area.
+WhateverPlayer:
+This player simply chooses a random position on the board to place its mark. If that position is occupied,
+it randomly selects again until it finds an empty spot. It does not have any strategy beyond this.
+2. Advantages of Using a Common Interface
+The advantage of designing the software so that each player class implements a common interface (Player)
+is that the interface allows for polymorphism. This means that you can treat all players as if they are
+of type Player,regardless of their specific classes.
+OOP Pillars:
+Polymorphism: It allows calling the same function on different objects without knowing their exact type.
+Encapsulation: The interface provides a clear way to interact with players without exposing the internal
+details of each class.
